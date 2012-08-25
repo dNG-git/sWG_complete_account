@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<swg_lang_file_v1 xmlns="urn:de-direct-netware-xmlns:swg.lang.v1">
+
+<de>
+<account>
+<string tid="bffe9a3c9a7e00ba00a11749e022d911" translation="Anmelden" />
+<string tid="c7a8abe22565cbcaf398c46cf8783b01" translation="Melde dich an, um die umfangreichen Funktionen dieser Webseite zu nutzen." />
+<string tid="03c61302b065977ac5b1108ee12a49f6" translation="Passwort vergessen?" />
+<string tid="98182962fc461d5da2d268a3f77c8c6b" translation="Nutze das Formular für vergessene Passwörter um ein Neues zu generieren." />
+<string tid="4394c8d8e63c470de62ced3ae85de5ae" translation="Abmelden" />
+<string tid="9f5bb34dedea8707fc414887ffe558a7" translation="Bitte melde dich immer ab, nachdem du deine Arbeit an einem öffentlich zugänglichen Computer beendet hast." />
+<string tid="46f2c71f04627dbea89c50249f1ee269" translation="Gewähltes Profil einsehen" />
+<string tid="6c0067f91e5e993a8761510b740c013e" translation="Profile enthalten nützliche Informationen über einen registrierten Benutzer. Hier kannst du nach ihnen suchen." />
+<string tid="2d3041f32455a8e20f80d39c58d22a01" translation="Eigenes Profil einsehen" />
+<string tid="ede2129a38a7c5cdeff7304153138e3c" translation="Die Anzeige des eigenen Profils kann dir interessante Informationen über deine Account-Nutzung geben." />
+<string tid="3022a5a0a4fb5fa638035524b0b1fe89" translation="Wer ist aktiv?" />
+<string tid="ba93e0485f2d9d741b37cbca66334717" translation="Finde heraus wieviele registrierte Nutzer gerade online sind und wer sie sind." />
+<string tid="dfd87bd34b4599aaaef6d0f2c8b6e3d7" translation="Profil bearbeiten" />
+<string tid="651b83322c6808bae7765c0fafad36cd" translation="Bearbeite oder aktualisiere dein Grundprofil. Nicht eingeschlossen sind die Änderung von E-Mail- und Passwort-Daten." />
+<string tid="f8b1a39cb0989f78c06db8c707fb11e3" translation="Aktualisiere deine E-Mail-Adresse" />
+<string tid="48de5031ef20aa70703de02e04edcc0d" translation="Du möchtest E-Mails erhalten? Bitte überprüfe deine Adresse auf Aktualität." />
+<string tid="0b39c5aca15b84b1ad53a94d6b3feb78" translation="Passwort wechseln" />
+<string tid="b4cef1448a91d821e38b7bf4e42986f1" translation="Wir empfehlen, dass Passwort regelmäßig aus Sicherheitsgründen zu aktualisieren. Es ist einfach und schnell erledigt." />
+<string tid="e59a16e09597796c6a7f0394fbbe6090" translation="Registriere einen Account" />
+<string tid="d7d3a73afe338f73191777fda1eb7dc0" translation="Werde ein Community-Mitglied und registriere dich jetzt." />
+<string tid="c96f531c0eda2dece593a2f8df3a58a8" translation="Wähle deine Sprache" />
+<string tid="3ea0f5f2860e33773d32cfcc1d6a10c9" translation="Unsere Webseite steht in verschiedenen Sprachen zur Verfügung. Du kannst aus diesen deine Muttersprache oder deinen Favoriten auswählen." />
+</account>
+</de>
+
+<de_formal>
+<account>
+<string tid="bffe9a3c9a7e00ba00a11749e022d911" translation="Anmelden" />
+<string tid="c7a8abe22565cbcaf398c46cf8783b01" translation="Melden Sie sich an, um die umfangreichen Funktionen dieser Webseite zu nutzen." />
+<string tid="03c61302b065977ac5b1108ee12a49f6" translation="Passwort vergessen?" />
+<string tid="98182962fc461d5da2d268a3f77c8c6b" translation="Nutzen Sie das Formular für vergessene Passwörter um ein Neues zu generieren." />
+<string tid="4394c8d8e63c470de62ced3ae85de5ae" translation="Abmelden" />
+<string tid="9f5bb34dedea8707fc414887ffe558a7" translation="Bitte melden Sie sich immer ab, nachdem Sie Ihre Arbeit an einem öffentlich zugänglichen Computer beendet haben." />
+<string tid="46f2c71f04627dbea89c50249f1ee269" translation="Gewähltes Profil einsehen" />
+<string tid="6c0067f91e5e993a8761510b740c013e" translation="Profile enthalten nützliche Informationen über einen registrierten Benutzer. Hier können Sie nach ihnen suchen." />
+<string tid="2d3041f32455a8e20f80d39c58d22a01" translation="Eigenes Profil einsehen" />
+<string tid="ede2129a38a7c5cdeff7304153138e3c" translation="Die Anzeige des eigenen Profils kann Ihnen interessante Informationen über Ihre Account-Nutzung geben." />
+<string tid="3022a5a0a4fb5fa638035524b0b1fe89" translation="Wer ist aktiv?" />
+<string tid="ba93e0485f2d9d741b37cbca66334717" translation="Finden Sie heraus wieviele registrierte Nutzer gerade online sind und wer sie sind." />
+<string tid="dfd87bd34b4599aaaef6d0f2c8b6e3d7" translation="Profil bearbeiten" />
+<string tid="651b83322c6808bae7765c0fafad36cd" translation="Bearbeiten oder aktualisieren Sie Ihr Grundprofil. Nicht eingeschlossen sind die Änderung von E-Mail- und Passwort-Daten." />
+<string tid="f8b1a39cb0989f78c06db8c707fb11e3" translation="Aktualisieren Sie Ihre E-Mail-Adresse" />
+<string tid="48de5031ef20aa70703de02e04edcc0d" translation="Möchten Sie E-Mails erhalten? Bitte überprüfen Sie Ihre Adresse auf Aktualität." />
+<string tid="0b39c5aca15b84b1ad53a94d6b3feb78" translation="Passwort wechseln" />
+<string tid="b4cef1448a91d821e38b7bf4e42986f1" translation="Wir empfehlen, dass Passwort regelmäßig aus Sicherheitsgründen zu aktualisieren. Es ist einfach und schnell erledigt." />
+<string tid="e59a16e09597796c6a7f0394fbbe6090" translation="Registrieren Sie einen Account" />
+<string tid="d7d3a73afe338f73191777fda1eb7dc0" translation="Werden Sie ein Community-Mitglied und registrieren Sie sich jetzt." />
+<string tid="c96f531c0eda2dece593a2f8df3a58a8" translation="Wählen Sie Ihre Sprache" />
+<string tid="3ea0f5f2860e33773d32cfcc1d6a10c9" translation="Unsere Webseite steht in verschiedenen Sprachen zur Verfügung. Sie können aus diesen Ihre Muttersprache oder Ihren Favoriten auswählen." />
+</account>
+</de_formal>
+
+</swg_lang_file_v1>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<swg_services_file_v1 xmlns="urn:de-direct-netware-xmlns:swg.services.v1">
+ <account>
+
+  <status_login active='1' position='1' lang=''>
+   <title value='Log in' />
+   <description value='Log in to use all advanced features provided by this website.' />
+   <image value='list_account_login.png' />
+   <link value='m=account;s=status;a=login' type='url0' />
+   <guests value='1' />
+   <members value='0' />
+   <group_right value='0' />
+  </status_login>
+
+  <forgotten_password active='1' position='2' lang=''>
+   <title value='Lost your password?' />
+   <description value='Use our forgotten password recovery form to receive a new password for your account.' />
+   <image value='list_account_forgotten_password.png' />
+   <link value='m=account;s=forgotten_password' type='url0' />
+   <guests value='1' />
+   <members value='0' />
+   <group_right value='0' />
+  </forgotten_password>
+
+  <status_logout active='1' position='3' lang=''>
+   <title value='Log out' />
+   <description value='Please do always logout after completing your work if you are in front of a pulic computer.' />
+   <image value='list_account_logout.png' />
+   <link value='m=account;s=status;a=logout' type='url0' />
+   <guests value='0' />
+   <members value='1' />
+   <group_right value='0' />
+  </status_logout>
+
+  <profile_select active='1' position='4' lang=''>
+   <title value='View a profile' />
+   <description value='Find out more about a specific user. Profiles contain useful information about registered members.' />
+   <image value='list_account_profile_view.png' />
+   <link value='m=account;s=profile;a=select' type='url0' />
+   <guests value='1' />
+   <members value='1' />
+   <group_right value='0' />
+  </profile_select>
+
+  <profile active='0' position='5' lang=''>
+   <title value='View own profile' />
+   <description value='Having a look at your own profile may provide interesting details about your account usage.' />
+   <image value='list_account_profile_view.png' />
+   <link value='m=account;s=profile' type='url0' />
+   <guests value='0' />
+   <members value='1' />
+   <group_right value='0' />
+  </profile>
+
+  <actives active='1' position='6' lang=''>
+   <title value='Who is online?' />
+   <description value='Find out how many registered members are online right now and who they are.' />
+   <image value='list_account_actives.png' />
+   <link value='m=account;a=actives' type='url0' />
+   <guests value='1' />
+   <members value='1' />
+   <group_right value='0' />
+  </actives>
+
+  <profile_edit active='1' position='7' lang=''>
+   <title value='Edit profile' />
+   <description value='Editing or updating your basic profile not including eMail or password changing.' />
+   <image value='list_account_profile_edit.png' />
+   <link value='m=account;s=profile;a=edit' type='url0' />
+   <guests value='0' />
+   <members value='1' />
+   <group_right value='0' />
+  </profile_edit>
+
+  <email_change active='1' position='8' lang=''>
+   <title value='Update your eMail address' />
+   <description value='You want to get eMails? Please make sure that your address is up-to-date.' />
+   <image value='list_account_email_change.png' />
+   <link value='m=account;s=email_change' type='url0' />
+   <guests value='0' />
+   <members value='1' />
+   <group_right value='0' />
+  </email_change>
+
+  <password_change active='1' position='9' lang=''>
+   <title value='Change password' />
+   <description>We recommend to change the password regularly for security reasons. It's easy and fast to do.</description>
+   <image value='list_account_password_change.png' />
+   <link value='m=account;s=password_change' type='url0' />
+   <guests value='0' />
+   <members value='1' />
+   <group_right value='0' />
+  </password_change>
+
+  <registration active='1' position='10' lang=''>
+   <title value='Register an account' />
+   <description value='Become a community member and register now.' />
+   <image value='list_account_registration.png' />
+   <link value='m=account;s=registration' type='url0' />
+   <guests value='1' />
+   <members value='0' />
+   <group_right value='0' />
+  </registration>
+
+  <language active='1' position='11' lang=''>
+   <title value='Select your language' />
+   <description value='We are providing our website in different languages. Please choose your native or favorite one.' />
+   <image value='list_account_language.png' />
+   <link value='m=account;s=language' type='url0' />
+   <guests value='1' />
+   <members value='1' />
+   <group_right value='0' />
+  </language>
+
+ </account>
+</swg_services_file_v1>

@@ -1,0 +1,6 @@
+_extras
+.*
+*.mo
+account.*
+make*.py*
+nbproject

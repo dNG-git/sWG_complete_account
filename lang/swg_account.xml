@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<swg_lang_file_v1>
+
+ <account>
+  <actives>
+   <input input="string" />
+   <digitstart__1><input input="string" /></digitstart__1>
+   <digitstart__2><input input="string" /></digitstart__2>
+   <empty><input input="string" /></empty>
+  </actives>
+
+  <avatar><input input="string" /></avatar>
+  <center><input input="string" /></center>
+  <details><input input="string" /></details>
+
+  <done>
+   <email>
+    <change>
+     <digitstart__1><input input="string" /></digitstart__1>
+     <digitstart__2><input input="string" /></digitstart__2>
+    </change>
+
+    <user>
+     <digitstart__1><input input="string" /></digitstart__1>
+     <digitstart__2><input input="string" /></digitstart__2>
+    </user>
+   </email>
+
+   <forgotten><password><input input="string" /></password></forgotten>
+   <language><select><input input="string" /></select></language>
+   <lastvisit><reset><input input="string" /></reset></lastvisit>
+   <login><input input="string" /></login>
+   <logout><input input="string" /></logout>
+   <password><change><input input="string" /></change></password>
+
+   <profile>
+    <delete><input input="string" /></delete>
+    <password><reset><input input="string" /></reset></password>
+    <edit><input input="string" /></edit>
+    <secid><reset><input input="string" /></reset></secid>
+   </profile>
+
+   <register><input input="string" /></register>
+  </done>
+
+  <group>
+   <desc><input input="string" /></desc>
+   <input input="string" />
+
+   <selector>
+    <empty><input input="string" /></empty>
+    <input input="string" />
+    <mark><input input="string" /></mark>
+    <unmark><input input="string" /></unmark>
+   </selector>
+  </group>
+
+  <helper>
+   <email><input input="string" /></email>
+   <secid><input input="string" /></secid>
+
+   <username>
+    <digitstart__1><input input="string" /></digitstart__1>
+    <digitstart__2><input input="string" /></digitstart__2>
+   </username>
+  </helper>
+
+  <email>
+   <input input="string" />
+   <change><input input="string" /></change>
+   <public><input input="string" /></public>
+
+   <user>
+    <input input="string" />
+    <message><input input="string" /></message>
+    <source><input input="string" /></source>
+   </user>
+  </email>
+
+  <forgotten><password><input input="string" /></password></forgotten>
+
+  <language>
+   <input input="string" />
+   <select><input input="string" /></select>
+  </language>
+
+  <lastvisit><input input="string" /></lastvisit>
+  <online><input input="string" /></online>
+
+  <otp>
+   <latest><wrong><password><input input="string" /></password></wrong></latest>
+
+   <list>
+    <input input="string" />
+
+    <current>
+     <delete><input input="string" /></delete>
+     <input input="string" />
+    </current>
+
+    <entries><input input="string" /></entries>
+
+    <new>
+     <generate><input input="string" /></generate>
+     <input input="string" />
+    </new>
+
+    <not><viewable><again><input input="string" /></again></viewable></not>
+    <remaining><entries><input input="string" /></entries></remaining>
+   </list>
+
+   <login><input input="string" /></login>
+   <position><input input="string" /></position>
+   <wrong><passwords><input input="string" /></passwords></wrong>
+  </otp>
+
+  <password>
+   <change><input input="string" /></change>
+   <new><input input="string" /></new>
+
+   <reset>
+    <input input="string" />
+    <recommendation><input input="string" /></recommendation>
+   </reset>
+  </password>
+
+  <profile>
+   <edit>
+    <input input="string" />
+    <admin><input input="string" /></admin>
+    <core><input input="string" /></core>
+   </edit>
+
+   <delete>
+    <input input="string" />
+    <confirm><input input="string" /></confirm>
+   </delete>
+
+   <password><reset><input input="string" /></reset></password>
+   <secid><reset><input input="string" /></reset></secid>
+   <select><input input="string" /></select>
+   <view><input input="string" /></view>
+  </profile>
+
+  <rating><input input="string" /></rating>
+
+  <real>
+   <input input="string" />
+   <address><input input="string" /></address>
+   <country><input input="string" /></country>
+   <firstname><input input="string" /></firstname>
+   <public><input input="string" /></public>
+   <surname><input input="string" /></surname>
+   <title><input input="string" /></title>
+  </real>
+
+  <register>
+   <control><input input="string" /></control>
+
+   <tou>
+    <input input="string" />
+    <accept><input input="string" /></accept>
+   </tou>
+  </register>
+
+  <registered><input input="string" /></registered>
+  <registration><welcome><input input="string" /></welcome></registration>
+
+  <secid>
+   <input input="string" />
+   <howto><input input="string" /></howto>
+  </secid>
+
+  <service><list><input input="string" /></list></service>
+  <signature><input input="string" /></signature>
+
+  <status><ex>
+   <input input="string" />
+
+   <login>
+    <unverified><input input="string" /></unverified>
+    <verified><input input="string" /></verified>
+   </login>
+
+   <validation><input input="string" /></validation>
+
+   <verification>
+    <status><input input="string" /></status>
+    <type><input input="string" /></type>
+   </verification>
+  </ex></status>
+
+  <title>
+   <cp><password><change><input input="string" /></change></password></cp>
+
+   <email><change><input input="string" /></change></email>
+   <password><change><input input="string" /></change></password>
+
+   <registration>
+    <input input="string" />
+    <welcome><input input="string" /></welcome>
+   </registration>
+
+   <secid><input input="string" /></secid>
+   <status><ex><input input="string" /></ex></status>
+  </title>
+
+  <use><cookie><input input="string" /></cookie></use>
+
+  <user><selector>
+   <input input="string" />
+   <empty><input input="string" /></empty>
+   <mark><input input="string" /></mark>
+   <unmark><input input="string" /></unmark>
+  </selector></user>
+
+  <userdescription><input input="string" /></userdescription>
+  <usertitle><input input="string" /></usertitle>
+
+  <validation><for>
+   <email>
+    <digitstart__1><input input="string" /></digitstart__1>
+    <digitstart__2><input input="string" /></digitstart__2>
+    <change><input input="string" /></change>
+   </email>
+
+   <password><change><input input="string" /></change></password>
+   <registration><input input="string" /></registration>
+  </for></validation>
+ </account>
+
+ <errors><account>
+  <email>
+   <blacklisted><input input="string" /></blacklisted>
+   <exists><input input="string" /></exists>
+  </email>
+
+  <gid><invalid><input input="string" /></invalid></gid>
+  <password><invalid><input input="string" /></invalid></password>
+  <secid><invalid><input input="string" /></invalid></secid>
+
+  <status><ex>
+   <login><first><input input="string" /></first></login>
+   <verification><expired><input input="string" /></expired></verification>
+   <verify><first><input input="string" /></first></verify>
+  </ex></status>
+
+  <tou><required><input input="string" /></required></tou>
+
+  <username>
+   <banned><input input="string" /></banned>
+   <exists><input input="string" /></exists>
+   <invalid><input input="string" /></invalid>
+   <locked><input input="string" /></locked>
+  </username>
+ </account></errors>
+
+</swg_lang_file_v1>
