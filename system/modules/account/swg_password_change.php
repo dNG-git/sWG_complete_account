@@ -146,7 +146,7 @@ Build the form
 ------------------------------------------------------------------------- */
 
 	$direct_globals['formbuilder']->entryAddPassword (array ("name" => "apassword","title" => (direct_local_get ("core_password")),"required" => true,"min" => $direct_settings['users_password_min']),NULL);
-	$direct_globals['formbuilder']->entryAddPassword (array ("name" => "apassword_new","title" => (direct_local_get ("account_password_new")),"required" => true,"min" => $direct_settings['users_password_min'],"max" => 0,"helper_text" => ((direct_local_get ("core_helper_password_1")).$direct_settings['users_password_min'].(direct_local_get ("core_helper_password_2")))),"2");
+	$direct_globals['formbuilder']->entryAddPassword (array ("name" => "apassword_new","title" => (direct_local_get ("account_password_new")),"required" => true,"min" => $direct_settings['users_password_min'],"max" => 0,"helper_text" => ((direct_local_get ("account_helper_password_1")).$direct_settings['users_password_min'].(direct_local_get ("account_helper_password_2")))),"2");
 
 	$direct_cachedata['output_formelements'] = $direct_globals['formbuilder']->formGet ($g_mode_save);
 

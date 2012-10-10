@@ -165,7 +165,7 @@ $g_search_conditions = ("<sqlconditions searchtype='simple'>
 					$g_user_parsed['marker_title'] = ((isset ($g_task_array['account_marker_title_0'])) ? $g_task_array['account_marker_title_0'] : direct_local_get ("account_user_selector_mark"));
 				}
 
-				$g_user_parsed['marker_url'] = ($g_mode_ajax_content ? "javascript:djs_swgAJAX_replace_url0('swgAJAX_embed_{$direct_cachedata['output_tid']}_point','".(direct_linker ("asis","ajax_content;m=account;s=selector;a=mark_switch;dsd=tid+{$direct_cachedata['output_tid']}++auid+{$g_user_array['ddbusers_id']}++page+".$direct_cachedata['output_page']))."')" : direct_linker ("url0",$direct_settings['ohandler'].";m=account;s=selector;a=mark_switch;dsd=tid+{$direct_cachedata['output_tid']}++auid+{$g_user_array['ddbusers_id']}++page+".$direct_cachedata['output_page']));
+				$g_user_parsed['marker_url'] = ($g_mode_ajax_content ? "javascript:djs_swgAJAX_replace_url0('swgAJAX_embed_{$direct_cachedata['output_tid']}_point','".(direct_linker ("asisuuid","ajax_content;m=account;s=selector;a=mark_switch;dsd=tid+{$direct_cachedata['output_tid']}++auid+{$g_user_array['ddbusers_id']}++page+{$direct_cachedata['output_page']};uuid=[uuid]"))."')" : direct_linker ("url0",$direct_settings['ohandler'].";m=account;s=selector;a=mark_switch;dsd=tid+{$direct_cachedata['output_tid']}++auid+{$g_user_array['ddbusers_id']}++page+".$direct_cachedata['output_page']));
 				$direct_cachedata['output_users_list'][] = $g_user_parsed;
 			}
 		}
@@ -174,7 +174,7 @@ $g_search_conditions = ("<sqlconditions searchtype='simple'>
 
 		if ($g_mode_ajax_content)
 		{
-			$direct_cachedata['output_page_url'] = "javascript:djs_swgAJAX_replace_url0('swgAJAX_embed_{$direct_cachedata['output_tid']}_point','ajax_content;m=account;s=selector;a=list;dsd=tid+{$direct_cachedata['output_tid']}++page+[page]')";
+			$direct_cachedata['output_page_url'] = "javascript:djs_swgAJAX_replace_url0('swgAJAX_embed_{$direct_cachedata['output_tid']}_point','ajax_content;m=account;s=selector;a=list;dsd=tid+{$direct_cachedata['output_tid']}++page+[page];uuid=[uuid]')";
 
 			$direct_globals['output']->header (false,true);
 			$direct_globals['output']->relatedManager ("account_selector_list","post_module_service_action_ajax");

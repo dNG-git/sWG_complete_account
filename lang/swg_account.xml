@@ -40,8 +40,22 @@
     <secid><reset><input input="string" /></reset></secid>
    </profile>
 
-   <register><input input="string" /></register>
+   <registration><input input="string" /></registration>
   </done>
+
+  <email>
+   <input input="string" />
+   <change><input input="string" /></change>
+   <public><input input="string" /></public>
+
+   <user>
+    <input input="string" />
+    <message><input input="string" /></message>
+    <source><input input="string" /></source>
+   </user>
+  </email>
+
+  <forgotten><password><input input="string" /></password></forgotten>
 
   <group>
    <desc><input input="string" /></desc>
@@ -57,27 +71,23 @@
 
   <helper>
    <email><input input="string" /></email>
+
+   <password>
+    <digitstart__1><input input="string" /></digitstart__1>
+    <digitstart__2><input input="string" /></digitstart__2>
+   </password>
+
    <secid><input input="string" /></secid>
 
    <username>
-    <digitstart__1><input input="string" /></digitstart__1>
-    <digitstart__2><input input="string" /></digitstart__2>
+    <input input="string" />
+
+    <limits>
+     <digitstart__1><input input="string" /></digitstart__1>
+     <digitstart__2><input input="string" /></digitstart__2>
+    </limits>
    </username>
   </helper>
-
-  <email>
-   <input input="string" />
-   <change><input input="string" /></change>
-   <public><input input="string" /></public>
-
-   <user>
-    <input input="string" />
-    <message><input input="string" /></message>
-    <source><input input="string" /></source>
-   </user>
-  </email>
-
-  <forgotten><password><input input="string" /></password></forgotten>
 
   <language>
    <input input="string" />
@@ -164,7 +174,11 @@
   </register>
 
   <registered><input input="string" /></registered>
-  <registration><welcome><input input="string" /></welcome></registration>
+
+  <registration>
+   <input input="string" />
+   <welcome><input input="string" /></welcome>
+  </registration>
 
   <secid>
    <input input="string" />

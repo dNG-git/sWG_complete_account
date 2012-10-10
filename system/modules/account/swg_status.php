@@ -153,7 +153,7 @@ We should have input in save mode
 Build the form
 ------------------------------------------------------------------------- */
 
-	$direct_globals['formbuilder']->entryAddText (array ("name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => (direct_local_get ("core_helper_username"))));
+	$direct_globals['formbuilder']->entryAddText (array ("name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => (direct_local_get ("account_helper_username"))));
 	$direct_globals['formbuilder']->entryAddPassword (array ("name" => "apassword","title" => (direct_local_get ("core_password")),"required" => true,"min" => $direct_settings['users_password_min']),NULL);
 	if (USE_cookies) { $direct_globals['formbuilder']->entryAddRadio (array ("name" => "acookie","title" => (direct_local_get ("account_use_cookie")),"required" => true)); }
 

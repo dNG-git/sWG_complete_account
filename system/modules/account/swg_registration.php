@@ -164,9 +164,9 @@ We should have input in save mode
 Build the form
 ------------------------------------------------------------------------- */
 
-		$direct_globals['formbuilder']->entryAddText (array ("name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => ((direct_local_get ("account_helper_username_1")).$direct_settings['users_min'].(direct_local_get ("account_helper_username_2")))));
+		$direct_globals['formbuilder']->entryAddText (array ("name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => ((direct_local_get ("account_helper_username_limits_1")).$direct_settings['users_min'].(direct_local_get ("account_helper_username_limits_2")))));
 		$direct_globals['formbuilder']->entryAddEMail (array ("name" => "aemail","title" => (direct_local_get ("account_email")),"required" => true,"size" => "l","min" => 5,"max" => 255,"helper_text" => (direct_local_get ("account_helper_email"))));
-		$direct_globals['formbuilder']->entryAddPassword (array ("name" => "apassword","title" => (direct_local_get ("core_password")),"required" => true,"min" => $direct_settings['users_password_min'],"max" => 0,"helper_text" => ((direct_local_get ("core_helper_password_1")).$direct_settings['users_password_min'].(direct_local_get ("core_helper_password_2")))),"2_tmd5");
+		$direct_globals['formbuilder']->entryAddPassword (array ("name" => "apassword","title" => (direct_local_get ("core_password")),"required" => true,"min" => $direct_settings['users_password_min'],"max" => 0,"helper_text" => ((direct_local_get ("account_helper_password_1")).$direct_settings['users_password_min'].(direct_local_get ("account_helper_password_2")))),"2_tmd5");
 		$direct_globals['formbuilder']->entryAddFileFtg (array ("name" => "aregister_tou","title" => (direct_local_get ("account_register_tou")),"size" => "l"),$direct_settings['path_data']."/settings/swg_account_tou.ftf");
 		$direct_globals['formbuilder']->entryAddSelect (array ("name" => "atou","title" => (direct_local_get ("account_register_tou_accept")),"required" => true,"size" => "s"));
 
@@ -279,8 +279,8 @@ $g_entry_array = array (
 
 					if ($g_continue_check)
 					{
-						$direct_cachedata['output_job'] = direct_local_get ("core_registration");
-						$direct_cachedata['output_job_desc'] = direct_local_get ("account_done_register");
+						$direct_cachedata['output_job'] = direct_local_get ("account_registration");
+						$direct_cachedata['output_job_desc'] = direct_local_get ("account_done_registration");
 						$direct_cachedata['output_jsjump'] = 0;
 
 						if ($g_target_url)
@@ -330,7 +330,7 @@ View form
 			$direct_cachedata['output_formbutton'] = direct_local_get ("core_continue");
 			$direct_cachedata['output_formsupport_ajax_dialog'] = true;
 			$direct_cachedata['output_formtarget'] = "m=account;s=registration;a=form-save;dsd=source+".(urlencode ($g_source))."++target+".(urlencode ($g_target));
-			$direct_cachedata['output_formtitle'] = direct_local_get ("core_registration");
+			$direct_cachedata['output_formtitle'] = direct_local_get ("account_registration");
 
 			$direct_globals['output']->header (false,true,$direct_settings['p3p_url'],$direct_settings['p3p_cp']);
 			$direct_globals['output']->relatedManager ("account_registration_form","post_module_service_action".$g_mode);

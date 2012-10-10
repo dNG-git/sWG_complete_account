@@ -238,13 +238,13 @@ Build the form
 
 	if ($direct_globals['kernel']->vUsertypeGetInt ($direct_settings['user']['type']) > 3)
 	{
-		$direct_globals['formbuilder']->entryAddText (array ("section" => $g_form_section,"name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => ((direct_local_get ("account_helper_username_1")).$direct_settings['users_min'].(direct_local_get ("account_helper_username_2")))));
+		$direct_globals['formbuilder']->entryAddText (array ("section" => $g_form_section,"name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => ((direct_local_get ("account_helper_username_limits_1")).$direct_settings['users_min'].(direct_local_get ("account_helper_username_limits_2")))));
 		$direct_globals['formbuilder']->entryAddRcpText (array ("section" => $g_form_section,"name" => "atitle","title" => (direct_local_get ("account_usertitle")),"size" => "l","max" => 255));
 		$direct_globals['formbuilder']->entryAddEMail (array ("section" => $g_form_section,"name" => "aemail","title" => (direct_local_get ("account_email")),"required" => true,"size" => "l","min" => 5,"max" => 255));
 	}
 	else
 	{
-		if ($direct_settings['account_profile_username_change']) { $direct_globals['formbuilder']->entryAddText (array ("section" => $g_form_section,"name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => ((direct_local_get ("account_helper_username_1")).$direct_settings['users_min'].(direct_local_get ("account_helper_username_2"))))); }
+		if ($direct_settings['account_profile_username_change']) { $direct_globals['formbuilder']->entryAddText (array ("section" => $g_form_section,"name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => ((direct_local_get ("account_helper_username_limits_1")).$direct_settings['users_min'].(direct_local_get ("account_helper_username_limits_2"))))); }
 		else { $direct_globals['formbuilder']->entryAdd ("info",array ("section" => $g_form_section,"name" => "ainfo_1","title" => (direct_local_get ("core_username")))); }
 
 		$direct_globals['formbuilder']->entryAdd ("info",array ("section" => $g_form_section,"name" => "ainfo_2","title" => (direct_local_get ("account_email"))));

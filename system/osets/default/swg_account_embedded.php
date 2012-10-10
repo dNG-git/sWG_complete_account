@@ -62,7 +62,7 @@ function direct_output_oset_account_embedded_ajax_selector ()
 	if ($direct_cachedata['output_pages'] > 1) { $f_return .= "<p class='pageborder{$direct_settings['theme_css_corners']} pageextrabg pageextracontent' style='text-align:center;font-size:10px'>".($direct_globals['output']->pagesGenerator ($direct_cachedata['output_page_url'],$direct_cachedata['output_pages'],$direct_cachedata['output_page']))."</p>\n"; }
 
 $f_return .= (direct_output_oset_default_filter_content (false,"swg_filter_{$direct_cachedata['output_tid']}_point",(direct_local_get ("core_filter_search","text")),$direct_cachedata['output_filter_text'])."<script type='text/javascript'><![CDATA[
-djs_load_functions({ file:'swg_filter.php.js' }).done (function () { djs_default_filter_init ({ ajax_id:'swgAJAX_embed_{$direct_cachedata['output_tid']}_point',ajax_url0:'ajax_content;s=filter;dsd=dfid+account_selector++dftext+[text]++tid+{$direct_cachedata['output_tid']}++source+{$direct_cachedata['output_filter_source']}',id:'swg_filter_{$direct_cachedata['output_tid']}_point' }); });
+djs_load_functions({ file:'swg_filter.php.js' }).done (function () { djs_default_filter_init ({ ajax_id:'swgAJAX_embed_{$direct_cachedata['output_tid']}_point',ajax_url0:\"".(direct_linker ("asisuuid","ajax_content;s=filter;dsd=dfid+account_selector++dftext+[text]++tid+{$direct_cachedata['output_tid']}++source+{$direct_cachedata['output_filter_source']};uuid=[uuid]"))."\",id:'swg_filter_{$direct_cachedata['output_tid']}_point' }); });
 ]]></script>");
 
 	if (empty ($direct_cachedata['output_users_list'])) { $f_return .= "\n<p><strong>".(direct_local_get ("account_user_selector_empty"))."</strong></p>"; }

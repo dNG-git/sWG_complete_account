@@ -67,15 +67,17 @@ if ($g_continue_check)
 {
 	direct_local_integration ("account");
 
+	$g_recipient_name = (isset ($direct_cachedata['validation_data']['account_recipient_name']) ? $direct_cachedata['validation_data']['account_recipient_name'] : "");
+
 $g_message = ("[contentform:highlight]".(direct_local_get ("core_message_by_user","text"))."
 
-[font:bold]".(direct_local_get ("core_message_from","text")).":[/font] {$direct_cachedata['validation_data']['source_address']}
-[font:bold]".(direct_local_get ("core_message_to","text")).":[/font] {$direct_cachedata['validation_data']['recipient_name']} ({$direct_cachedata['validation_data']['recipient_address']})[/contentform]
+[font:bold]".(direct_local_get ("core_message_from","text")).":[/font] {$direct_cachedata['validation_data']['account_source_address']}
+[font:bold]".(direct_local_get ("core_message_to","text")).":[/font] ".(strlen ($g_recipient_name) ? $g_recipient_name." ({$direct_cachedata['validation_data']['account_recipient_address']})" : $direct_cachedata['validation_data']['account_recipient_address'])."[/contentform]
 
 [font:bold]".(direct_local_get ("core_message","text")).":[/font]
 
 [hr]
-".$direct_cachedata['validation_data']['message']);
+".$direct_cachedata['validation_data']['account_message']);
 
 	if (($direct_settings['swg_pyhelper'])&&(direct_autoload ('dNG\sWG\web\directPyHelper')))
 	{
@@ -84,12 +86,12 @@ $g_message = ("[contentform:highlight]".(direct_local_get ("core_message_by_user
 $g_entry_array = array (
 "id" => uniqid (""),
 "name" => "de.direct_netware.sWG.plugins.sendmail",
-"identifier" => $direct_cachedata['validation_data']['recipient_address'],
+"identifier" => $direct_cachedata['validation_data']['account_recipient_address'],
 "data" => direct_evars_write (array (
  "core_lang" => $g_user_array['ddbusers_lang'],
  "account_sendmail_message" => $g_message,
- "account_sendmail_recipient_email" => $direct_cachedata['validation_data']['recipient_address'],
- "account_sendmail_recipient_name" => $direct_cachedata['validation_data']['recipient_name'],
+ "account_sendmail_recipient_email" => $direct_cachedata['validation_data']['account_recipient_address'],
+ "account_sendmail_recipient_name" => $g_recipient_name,
  "account_sendmail_title" => direct_local_get ("account_email_user_message","text")
  ))
 );
@@ -99,7 +101,7 @@ $g_entry_array = array (
 	else
 	{
 		$g_sendmailer_object = new directSendmailerFormtags ();
-		$g_sendmailer_object->recipientsDefine (array ($direct_cachedata['validation_data']['recipient_address'] => $direct_cachedata['validation_data']['recipient_name']));
+		$g_sendmailer_object->recipientsDefine (array ($direct_cachedata['validation_data']['account_recipient_address'] => $g_recipient_name));
 
 		$g_sendmailer_object->messageSet ($g_message);
 		$g_continue_check = $g_sendmailer_object->send ("single",$direct_settings['administration_email_out'],$direct_settings['swg_title_txt']." - ".(direct_local_get ("account_email_user_message","text")));

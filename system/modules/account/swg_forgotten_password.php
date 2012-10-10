@@ -112,7 +112,7 @@ case "form-save":
 
 	if ($direct_globals['kernel']->serviceInitDefault ())
 	{
-	if ($direct_settings['account_password_forgotten_supported'])
+	if ($direct_settings['account_password_default_forgotten_supported'])
 	{
 	//j// BOA
 	if ($direct_settings['user']['type'] == "gt")
@@ -153,7 +153,7 @@ We should have input in save mode
 Build the form
 ------------------------------------------------------------------------- */
 
-		$direct_globals['formbuilder']->entryAddText (array ("name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => (direct_local_get ("core_helper_username"))));
+		$direct_globals['formbuilder']->entryAddText (array ("name" => "ausername","title" => (direct_local_get ("core_username")),"required" => true,"size" => "s","min" => $direct_settings['users_min'],"max" => 100,"helper_text" => (direct_local_get ("account_helper_username"))));
 		$direct_globals['formbuilder']->entryAddPassword (array ("name" => "asecid","title" => (direct_local_get ("account_secid")),"required" => true,"min" => 96,"max" => 96,"helper_text" => (direct_local_get ("account_helper_secid")),"helper_closing" => false));
 
 		$direct_cachedata['output_formelements'] = $direct_globals['formbuilder']->formGet ($g_mode_save);
